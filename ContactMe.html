@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Landing Page</title>
+        <meta charset="utf-8">
+        <meta name "viewport" content="width=device-width, initial-scale=1.0"> 
+       <link rel = "stylesheet" href = "style.css">
+    </head>
+    <body>
+        <section class = "nav_container">
+            
+                <div class = "headings" id = "navbar">
+                    <a href = "./responsive_landing_page.html">Home</a>
+                    <a href ="./Services.html">Services</a>
+                    <a class = "active"  href = "./ContactMe.html">Contact me</a>
+                    <a href = "./AboutMe.html">About me</a>
+                </div>
+
+
+                
+                <div class = "menuicon" onclick="toggleMenu()">&#9776;</div>
+        </section>
+        <h1>This is Contact Me Page</h1>
+
+        <script>
+            function toggleMenu()
+            {
+                var navbar = document.getElementById("navbar");
+                if (navbar.style.display == "block")
+                {
+                    navbar.style.display = "none";
+                }
+                else if(navbar.style.display == "flex")
+                {
+                    navbar.style.display = "none";
+                }
+                else
+                {
+                    navbar.style.display = "flex";
+                }
+            }
+        </script>
+
+    </body>
+</html>
